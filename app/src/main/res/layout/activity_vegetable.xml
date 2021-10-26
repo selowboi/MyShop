@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/orange_1"
+    tools:context=".VegetableActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_vegetables_picture"
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/dark_green"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/tv_vegetables_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vegetables"
+            android:textSize="36sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_vegetables_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_8"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_vegetables_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_vegetables_picture"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_vegetables_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 15.000"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_vegetables_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_vegetables_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vegetables contain several types of vitamins such as A, C, B, B6 and D as well as several other substances such as folate and antioxidants"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_back_vegetables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+</RelativeLayout>

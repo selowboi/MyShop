@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/orange_1"
+    tools:context=".ClothActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_clothes_picture"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/dark_green"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_clothes_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/clothes"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_clothes_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_9" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_clothes_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_clothes_picture"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_clothes_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 115.000"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_clothes_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_clothes_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="T-shirt uses Cotton Combed 24s which is soft, not hot, the color of the material does not fade quickly and is cool. Certainly comfortable to use for daily activities.
+
+Unisex, suitable for both men and women."
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_back_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+</RelativeLayout>

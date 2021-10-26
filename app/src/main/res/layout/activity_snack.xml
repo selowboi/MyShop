@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/orange_1"
+    tools:context=".SnackActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_snacks_picture"
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/dark_green"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/tv_snacks_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/snacks"
+            android:textSize="36sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_snacks_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_10"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_snacks_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_snacks_picture"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_snack_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 7.000"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_snacks_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_snacks_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It's time to stock up on crunchy snacks that taste really Indonesian! Buy this package now and get 3 Pcs random snacks for free that you can enjoy anytime and anywhere."
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_back_snacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+</RelativeLayout>

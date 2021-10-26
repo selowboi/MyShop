@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/orange_1"
+    tools:context=".DrinkActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_drinks_picture"
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/dark_green"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/tv_drinks_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drinks"
+            android:textSize="36sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_drinks_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_12"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_drinks_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_drinks_picture"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_drinks_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 27.000"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_drinks_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_drinks_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coca cola bottle 250 ml expiry march 2022 250 ml cute bottle fanta expiry august 2022 250 ml cute bottle sprite expiry july 2022
+
+Contents of 12 bottles"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_back_drinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+</RelativeLayout>

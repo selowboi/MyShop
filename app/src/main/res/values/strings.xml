@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyShop</string>
+    <string name="my_logo">MY_LOGO</string>
+    <string name="search_button">SEARCH_BUTTON</string>
+    <string name="profile_button">PROFILE_BUTTON</string>
+    <string name="search">Search...</string>
+    <string name="promo">PROMO</string>
+    <string name="copyright">©2021 By Andreas Jonathan</string>
+    <string name="welcome_andreas">Welcome, Andreas!</string>
+    <string name="fruits">Fruits</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="clothes">Clothes</string>
+    <string name="snacks">Snacks</string>
+    <string name="meats">Meats</string>
+    <string name="drinks">Drinks</string>
+    <string name="back">BACK</string>
+</resources>

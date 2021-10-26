@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/orange_1"
+    tools:context=".MeatActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_meats_picture"
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/dark_green"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/tv_meats_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meats"
+            android:textSize="36sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_meats_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_11"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_meats_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_meats_picture"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_meats_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 65.000"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_meats_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_meats_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Short Plate beef from US SWIFt, thinly sliced for cooking shabu shabu, sukiyaki, or beef bowl yoshinoya The price listed is for 500 GramsPacking per 500gr Gojek n Grab ready for Jabodetabek 100% HALAL, halal letter attached"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_back_meats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+</RelativeLayout>
